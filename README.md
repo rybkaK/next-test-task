@@ -27,7 +27,7 @@ docker stop <container_id>
 ```
 
 ### Technical decision
-The project is built with TypeScript for development and Docker for deployment. I used JSON-Server to mock the backend and simulate a REST API. Docker ensures that the app and API run in separate containers, making it easy to deploy and manage. The application is designed to be responsive, with a focus on SEO best practices and a user-friendly interface.
+The project is built with TypeScript for development and Docker for deployment. I used JSON-Server to mock the backend and simulate a REST API. Docker ensures that the app and API run in separate containers, making it easy to deploy and manage. I also implemented search functionality without using JSON Placeholder, as it does not handle partial name searches correctly. Instead, I used a custom solution to ensure that the search works as expected with product names. The application is designed to be responsive, with a focus on SEO best practices and a user-friendly interface. 
 
 ### Time spent
 4.5 hours
