@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Menu from "./components/menu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,39 +34,19 @@ export default function RootLayout({
             <div className="text-2xl font-bold">
               <Link href="/">Home</Link>
             </div>
-            <input type="checkbox" id="menu-toggle" className="peer hidden" />
-            <label
-              htmlFor="menu-toggle"
-              className="md:hidden text-white cursor-pointer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </label>
-
+            <Menu />
             <nav className="hidden md:flex space-x-6">
               <Link href="/contacts">Contacts</Link>
               <Link href="/contacts">About us</Link>
               <Link href="/contacts">Learn more</Link>
             </nav>
           </div>
-          <div className="peer-checked:block hidden bg-primary text-white p-4 md:hidden">
+          <div
+            id="mobile-menu"
+            className="peer-checked:block hidden bg-primary text-white p-4 md:hidden"
+          >
             <nav>
               <ul className="space-y-4">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
                 <li>
                   <Link href="/contacts">Contacts</Link>
                 </li>
@@ -81,10 +62,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="bg-accent text-white text-center p-4 flex justify-center items-center w-full">
-          <ul className="flex space-x-6">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
+          <ul className="flex space-x-2">
             <li>
               <Link href="/products">Products</Link>
             </li>
