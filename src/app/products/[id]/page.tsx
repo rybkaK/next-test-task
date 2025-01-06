@@ -1,12 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import ProductSvc from "@/app/services/ProductSvc";
 import Image from "next/image";
 import Head from "next/head";
+interface IProps {
+  params: Promise<{ id: string }>;
+}
+const ProductItem: FC<IProps> = async ({ params }) => {
+  const { id } = await params;
+  const product = await ProductSvc.getProductById(id);
 
-const ProductItem = async ({ params }: { params: { id: string } }) => {
-  
-  const product = await ProductSvc.getProductById(params.id);
-  
   return (
     <>
       <Head>
