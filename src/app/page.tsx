@@ -2,6 +2,7 @@ import Link from "next/link";
 import Search from "./components/search";
 import ProductSvc from "./services/ProductSvc";
 import Image from "next/image";
+import Head from "next/head";
 
 export default async function Home(props: {
   searchParams?: Promise<{
@@ -13,13 +14,27 @@ export default async function Home(props: {
   const query = searchParams?.query || "";
   const products = await ProductSvc.getAll(query);
   return (
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <>
+      <Head>
+        <title>Our Products</title>
+        <meta
+          name="description"
+          content="Discover our amazing range of products. Find the perfect product for you."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Our Products" />
+        <meta
+          property="og:description"
+          content="Discover our amazing range of products. Find the perfect product for you."
+        />
+      </Head>
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start p-4 sm:p-0">
         <div className="container mx-auto flex justify-between flex-col items-start pt-4 pb-4  min-h-screen">
           <h1 className="text-2xl text-text font-bold mb-6">Our Products</h1>
           <div className="mb-6">
             <Search />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 min-h-[1200px]">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -58,5 +73,6 @@ export default async function Home(props: {
           </div>
         </div>
       </main>
+    </>
   );
 }

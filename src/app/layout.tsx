@@ -55,7 +55,9 @@ export default function RootLayout({
             </label>
 
             <nav className="hidden md:flex space-x-6">
-              <Link href="/products">Products</Link>
+              <Link href="/contacts">Contacts</Link>
+              <Link href="/contacts">About us</Link>
+              <Link href="/contacts">Learn more</Link>
             </nav>
           </div>
           <div className="peer-checked:block hidden bg-primary text-white p-4 md:hidden">
@@ -65,26 +67,34 @@ export default function RootLayout({
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/products">Products</Link>
+                  <Link href="/contacts">Contacts</Link>
                 </li>
                 <li>
-                  <Link href="/contacts">Contacts</Link>
+                  <Link href="/contacts">About us</Link>
+                </li>
+                <li>
+                  <Link href="/contacts">Learn more</Link>
                 </li>
               </ul>
             </nav>
           </div>
         </header>
         {children}
-        <footer className="bg-accent text-white text-center p-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/products">Products</Link>
-          </li>
-          <li>
-            <Link href="/contacts">Contacts</Link>
-          </li>
+        <footer className="bg-accent text-white text-center p-4 flex justify-center items-center w-full">
+          <ul className="flex space-x-6">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/products">Products</Link>
+            </li>
+            <li>
+              <Link href="/contacts">Contacts</Link>
+            </li>
+            <li>
+              <Link href="/contacts">Learn more</Link>
+            </li>
+          </ul>
         </footer>
       </body>
     </html>
