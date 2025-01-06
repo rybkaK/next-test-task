@@ -1,175 +1,174 @@
 {
   "products": [
-  {
-    "id": 1,
-    "name": "Wireless Mouse",
-    "price": 25.99,
-    "description": "Ergonomic wireless mouse with adjustable DPI.",
-    "category": "Electronics",
-    "rating": 4.5,
-    "inStock": 120,
-    "image": "https://i.mi.ua/media/catalog/product/cache/1/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/w/h/white11.webp"
-  },
-  {
-    "id": 2,
-    "name": "Gaming Keyboard",
-    "price": 89.99,
-    "description": "Mechanical RGB backlit gaming keyboard.",
-    "category": "Electronics",
-    "rating": 4.8,
-    "inStock": 45,
-    "image": "https://content2.rozetka.com.ua/goods/images/big_tile/354497255.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Noise-Canceling Headphones",
-    "price": 199.99,
-    "description": "Over-ear headphones with active noise cancellation.",
-    "category": "Audio",
-    "rating": 4.7,
-    "inStock": 30,
-    "image": "https://content2.rozetka.com.ua/goods/images/big/277132826.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Smartphone Stand",
-    "price": 12.49,
-    "description": "Adjustable aluminum stand for smartphones and tablets.",
-    "category": "Accessories",
-    "rating": 4.3,
-    "inStock": 200,
-    "image": "https://content1.rozetka.com.ua/goods/images/big_tile/430869337.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Portable Charger",
-    "price": 39.99,
-    "description": "10,000mAh power bank with fast charging support.",
-    "category": "Electronics",
-    "rating": 4.6,
-    "inStock": 80,
-    "image": "https://content1.rozetka.com.ua/goods/images/big_tile/457919022.jpg"
-  },
-  {
-    "id": 6,
-    "name": "LED Desk Lamp",
-    "price": 29.99,
-    "description": "Dimmable LED lamp with USB charging port.",
-    "category": "Home & Office",
-    "rating": 4.4,
-    "inStock": 60,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/363714784.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Bluetooth Speaker",
-    "price": 49.99,
-    "description": "Compact wireless speaker with deep bass.",
-    "category": "Audio",
-    "rating": 4.5,
-    "inStock": 100,
-    "image": "https://content1.rozetka.com.ua/goods/images/big_tile/12058423.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Yoga Mat",
-    "price": 24.99,
-    "description": "Non-slip yoga mat with carrying strap.",
-    "category": "Fitness",
-    "rating": 4.7,
-    "inStock": 150,
-    "image": "https://content1.rozetka.com.ua/goods/images/big_tile/477834470.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Water Bottle",
-    "price": 14.99,
-    "description": "Insulated stainless steel water bottle.",
-    "category": "Fitness",
-    "rating": 4.9,
-    "inStock": 300,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/484746343.jpg"
-  },
-  {
-    "id": 10,
-    "name": "4K Action Camera",
-    "price": 129.99,
-    "description": "Waterproof 4K camera with wide-angle lens.",
-    "category": "Electronics",
-    "rating": 4.2,
-    "inStock": 25,
-    "image": "https://content2.rozetka.com.ua/goods/images/big_tile/438838867.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Fitness Tracker",
-    "price": 59.99,
-    "description": "Smart fitness tracker with heart rate monitor.",
-    "category": "Fitness",
-    "rating": 4.4,
-    "inStock": 90,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/323939708.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Wireless Earbuds",
-    "price": 79.99,
-    "description": "True wireless earbuds with noise isolation.",
-    "category": "Audio",
-    "rating": 4.6,
-    "inStock": 70,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/491373572.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Smart Light Bulb",
-    "price": 19.99,
-    "description": "WiFi-enabled LED bulb with adjustable color temperature.",
-    "category": "Home & Office",
-    "rating": 4.5,
-    "inStock": 150,
-    "image": "https://content1.rozetka.com.ua/goods/images/big_tile/396256174.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Laptop Stand",
-    "price": 34.99,
-    "description": "Ergonomic adjustable aluminum laptop stand.",
-    "category": "Accessories",
-    "rating": 4.6,
-    "inStock": 50,
-    "image": "https://content2.rozetka.com.ua/goods/images/big_tile/425304058.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Desk Organizer",
-    "price": 18.99,
-    "description": "Multi-functional desk organizer with storage compartments.",
-    "category": "Home & Office",
-    "rating": 4.2,
-    "inStock": 120,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/394775923.jpg"
-  },
-  {
-    "id": 16,
-    "name": "Wireless Charger",
-    "price": 27.99,
-    "description": "Fast wireless charger for Qi-enabled devices.",
-    "category": "Electronics",
-    "rating": 4.5,
-    "inStock": 95,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/332934838.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Backpack",
-    "price": 54.99,
-    "description": "Water-resistant backpack with laptop compartment.",
-    "category": "Accessories",
-    "rating": 4.8,
-    "inStock": 75,
-    "image": "https://content.rozetka.com.ua/goods/images/big_tile/484730004.jpg"
-  }
-]
-
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "price": 25.99,
+      "description": "Ergonomic wireless mouse with adjustable DPI.",
+      "category": "Electronics",
+      "rating": 4.5,
+      "inStock": 120,
+      "image": "https://i.mi.ua/media/catalog/product/cache/1/image/710x600/602f0fa2c1f0d1ba5e241f914e856ff9/w/h/white11.webp"
+    },
+    {
+      "id": 2,
+      "name": "Gaming Keyboard",
+      "price": 89.99,
+      "description": "Mechanical RGB backlit gaming keyboard.",
+      "category": "Electronics",
+      "rating": 4.8,
+      "inStock": 45,
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/354497255.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Noise-Canceling Headphones",
+      "price": 199.99,
+      "description": "Over-ear headphones with active noise cancellation.",
+      "category": "Audio",
+      "rating": 4.7,
+      "inStock": 30,
+      "image": "https://content2.rozetka.com.ua/goods/images/big/277132826.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Smartphone Stand",
+      "price": 12.49,
+      "description": "Adjustable aluminum stand for smartphones and tablets.",
+      "category": "Accessories",
+      "rating": 4.3,
+      "inStock": 200,
+      "image": "https://content1.rozetka.com.ua/goods/images/big_tile/430869337.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Portable Charger",
+      "price": 39.99,
+      "description": "10,000mAh power bank with fast charging support.",
+      "category": "Electronics",
+      "rating": 4.6,
+      "inStock": 80,
+      "image": "https://content1.rozetka.com.ua/goods/images/big_tile/457919022.jpg"
+    },
+    {
+      "id": 6,
+      "name": "LED Desk Lamp",
+      "price": 29.99,
+      "description": "Dimmable LED lamp with USB charging port.",
+      "category": "Home & Office",
+      "rating": 4.4,
+      "inStock": 60,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/363714784.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "description": "Compact wireless speaker with deep bass.",
+      "category": "Audio",
+      "rating": 4.5,
+      "inStock": 100,
+      "image": "https://content1.rozetka.com.ua/goods/images/big_tile/12058423.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Yoga Mat",
+      "price": 24.99,
+      "description": "Non-slip yoga mat with carrying strap.",
+      "category": "Fitness",
+      "rating": 4.7,
+      "inStock": 150,
+      "image": "https://content1.rozetka.com.ua/goods/images/big_tile/477834470.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Water Bottle",
+      "price": 14.99,
+      "description": "Insulated stainless steel water bottle.",
+      "category": "Fitness",
+      "rating": 4.9,
+      "inStock": 300,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/484746343.jpg"
+    },
+    {
+      "id": 10,
+      "name": "4K Action Camera",
+      "price": 129.99,
+      "description": "Waterproof 4K camera with wide-angle lens.",
+      "category": "Electronics",
+      "rating": 4.2,
+      "inStock": 25,
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/438838867.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Fitness Tracker",
+      "price": 59.99,
+      "description": "Smart fitness tracker with heart rate monitor.",
+      "category": "Fitness",
+      "rating": 4.4,
+      "inStock": 90,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/323939708.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Wireless Earbuds",
+      "price": 79.99,
+      "description": "True wireless earbuds with noise isolation.",
+      "category": "Audio",
+      "rating": 4.6,
+      "inStock": 70,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/491373572.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Smart Light Bulb",
+      "price": 19.99,
+      "description": "WiFi-enabled LED bulb with adjustable color temperature.",
+      "category": "Home & Office",
+      "rating": 4.5,
+      "inStock": 150,
+      "image": "https://content1.rozetka.com.ua/goods/images/big_tile/396256174.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Laptop Stand",
+      "price": 34.99,
+      "description": "Ergonomic adjustable aluminum laptop stand.",
+      "category": "Accessories",
+      "rating": 4.6,
+      "inStock": 50,
+      "image": "https://content2.rozetka.com.ua/goods/images/big_tile/425304058.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Desk Organizer",
+      "price": 18.99,
+      "description": "Multi-functional desk organizer with storage compartments.",
+      "category": "Home & Office",
+      "rating": 4.2,
+      "inStock": 120,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/394775923.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Wireless Charger",
+      "price": 27.99,
+      "description": "Fast wireless charger for Qi-enabled devices.",
+      "category": "Electronics",
+      "rating": 4.5,
+      "inStock": 95,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/332934838.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Backpack",
+      "price": 54.99,
+      "description": "Water-resistant backpack with laptop compartment.",
+      "category": "Accessories",
+      "rating": 4.8,
+      "inStock": 75,
+      "image": "https://content.rozetka.com.ua/goods/images/big_tile/484730004.jpg"
+    }
+  ]
 }

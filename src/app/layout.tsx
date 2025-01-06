@@ -67,13 +67,24 @@ export default function RootLayout({
                 <li>
                   <Link href="/products">Products</Link>
                 </li>
+                <li>
+                  <Link href="/contacts">Contacts</Link>
+                </li>
               </ul>
             </nav>
           </div>
         </header>
         {children}
         <footer className="bg-accent text-white text-center p-4">
-          <p>&copy; 2025 MySite. All Rights Reserved.</p>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/products">Products</Link>
+          </li>
+          <li>
+            <Link href="/contacts">Contacts</Link>
+          </li>
         </footer>
       </body>
     </html>

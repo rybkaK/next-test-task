@@ -2,8 +2,17 @@ import { IProduct } from "@/app/models/product";
 import { fetchFromBaseUrl } from "@/app/util";
 
 class ProductSvc {
-  async getAll(): Promise<IProduct[]> {
-    return fetchFromBaseUrl<IProduct[]>("/products");
+  async getAll(name?: string): Promise<IProduct[]> {
+    return fetchFromBaseUrl<IProduct[]>(`/products`).then((res) => {
+      if(name) {
+        return res.filter(
+          (item) =>
+            name && item.name?.toLocaleLowerCase().includes(name.toLowerCase())
+        );
+
+      } 
+      return res;
+  });
   }
 
   async getProductById(id: string): Promise<IProduct> {
