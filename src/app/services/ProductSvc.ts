@@ -1,5 +1,5 @@
-import { IProduct } from "@/models/product";
-import { fetchFromBaseUrl } from "@/util";
+import { IProduct } from "@/app/models/product";
+import { fetchFromBaseUrl } from "@/app/util";
 
 class ProductSvc {
   async getAll(): Promise<IProduct[]> {

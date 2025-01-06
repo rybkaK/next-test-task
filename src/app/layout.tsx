@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,53 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="bg-primary text-white p-4">
+          <div className="container mx-auto flex justify-between items-center">
+            <div className="text-2xl font-bold">
+              <Link href="/">Home</Link>
+            </div>
+            <input type="checkbox" id="menu-toggle" className="peer hidden" />
+            <label
+              htmlFor="menu-toggle"
+              className="md:hidden text-white cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+
+            <nav className="hidden md:flex space-x-6">
+              <Link href="/products">Products</Link>
+            </nav>
+          </div>
+          <div className="peer-checked:block hidden bg-primary text-white p-4 md:hidden">
+            <nav>
+              <ul className="space-y-4">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/products">Products</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
         {children}
+        <footer className="bg-accent text-white text-center p-4">
+          <p>&copy; 2025 MySite. All Rights Reserved.</p>
+        </footer>
       </body>
     </html>
   );
