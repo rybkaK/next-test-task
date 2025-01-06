@@ -7,7 +7,9 @@ class ProductSvc {
       if(name) {
         return res.filter(
           (item) =>
-            name && item.name?.toLocaleLowerCase().includes(name.toLowerCase())
+            (name &&
+              item.name?.toLocaleLowerCase().includes(name.toLowerCase())) ||
+            item.description?.toLocaleLowerCase().includes(name.toLowerCase())
         );
 
       } 
