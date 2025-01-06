@@ -35,41 +35,46 @@ export default async function Home(props: {
             <Search />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 min-h-[1200px]">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="border rounded-lg shadow-lg overflow-hidden group transition-all hover:scale-105"
-              >
-                <Link href={`/products/${product.id}`} passHref>
-                  <div className="block">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      width={175}
-                      height={175}
-                      quality={90}
-                      className="w-full h-64 object-cover group-hover:opacity-80 transition-all"
-                    />
-                    <div className="p-4">
-                      <h2 className="text-lg font-semibold text-primary mb-2">
-                        {product.name}
-                      </h2>
-                      <p className="text-sm text-secondary mb-4">
-                        {product.description}
-                      </p>
-                      <div className="flex justify-between items-center">
-                        <p className="text-xl font-bold text-text">
-                          ${product.price.toFixed(2)}
-                        </p>
-                        <p className="text-sm text-accent">
-                          {product.category}
-                        </p>
-                      </div>
+            {products && products.length > 0 ? (
+              <>
+                {products.map((product) => (
+                  <div key={product.id}>
+                    <div className="border rounded-lg shadow-lg overflow-hidden group transition-all hover:scale-105">
+                      <Link href={`/products/${product.id}`} passHref>
+                        <div className="block">
+                          <Image
+                            src={product.image}
+                            alt={product.name}
+                            width={175}
+                            height={175}
+                            quality={90}
+                            className="w-full h-64 object-cover group-hover:opacity-80 transition-all"
+                          />
+                          <div className="p-4">
+                            <h2 className="text-lg font-semibold text-primary mb-2">
+                              {product.name}
+                            </h2>
+                            <p className="text-sm text-secondary mb-4">
+                              {product.description}
+                            </p>
+                            <div className="flex justify-between items-center">
+                              <p className="text-xl font-bold text-text">
+                                ${product.price.toFixed(2)}
+                              </p>
+                              <p className="text-sm text-accent">
+                                {product.category}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
                     </div>
                   </div>
-                </Link>
-              </div>
-            ))}
+                ))}
+              </>
+            ) : (
+              <div>Product not found</div>
+            )}
           </div>
         </div>
       </main>

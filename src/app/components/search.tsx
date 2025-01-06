@@ -10,7 +10,7 @@ const Search = () => {
 
     function handleSearch(term: string) {
       const params = new URLSearchParams(searchParams);
-      if (term) {
+      if (term && term.trim() !== '') {
         params.set("query", term);
       } else {
         params.delete("query");
